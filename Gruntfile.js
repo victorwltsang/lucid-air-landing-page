@@ -49,7 +49,7 @@ grunt.initConfig({
 					cwd: './src/',
 					dest: './dest/',
 					src: ['./*.html'], // providing a pattern, indicating the files we care about
-					ext: '.min.html', // providing an output extension for our newly created files
+					ext: '.html', // providing an output extension for our newly created files
 					extDot: 'last' // used to indicate where the period indicating the extension is located (first or last)
 				}
 			]
