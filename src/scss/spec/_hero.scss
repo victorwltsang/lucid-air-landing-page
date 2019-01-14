@@ -11,7 +11,7 @@
 
     &__text {
         position: absolute;
-        top: 2%;
+        top: 10%;
         left: 20px;
         line-height: 1.2;
         transform: translateY(10%);
@@ -27,14 +27,16 @@
             font-size: 24px;
             letter-spacing: 1px;
             font-weight: 500;
+            margin:0;
         }
 
         @include max-tablet {
-            span.break-mobile {
-                display: block;
-            }
+            h1 {
+                width:300px;
+               }
         }
 
+      
         @include min-tablet {
             top: 60%;
             left: 5%;
@@ -55,11 +57,15 @@
 
             h1 {
                 font-size: 48px;
-                line-height: 60px;
+                // line-height: 60px;
 
             }
         }
-
+        @media screen and (min-width:1680px){
+            h1{
+                font-size: 72px;
+            }
+        }
 
     }
 }

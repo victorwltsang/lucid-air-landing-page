@@ -5,13 +5,13 @@
   }
 
   @mixin min-tablet {
-    @media (min-width: #{$tablet-width}) {
+    @media (min-width: #{$tablet-width - 1px}) {
       @content;
     }
   }
 
   @mixin max-tablet {
-    @media (max-width: #{$tablet-width - 1px}) {
+    @media (max-width: #{$tablet-width }) {
       @content;
     }
   }
