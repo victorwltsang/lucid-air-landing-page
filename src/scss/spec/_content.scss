@@ -1,6 +1,7 @@
 .content {
     padding: 50px 0;
-    min-height:600px; 
+    min-height: 600px;
+
     h2 {
         font-weight: 300;
         margin-top: 0;
@@ -9,7 +10,7 @@
     @include desktop {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-       
+
         h2 {
             font-weight: 500;
         }
@@ -36,8 +37,9 @@
 
     &__copy {
         color: #2d2926;
-        @include desktop{
-            padding:20px 0;
+
+        @include desktop {
+            padding: 20px 0;
         }
 
         p {
@@ -56,12 +58,13 @@
     }
 
     &__form {
-        @include desktop{
-            padding:20px 0;
+        @include desktop {
+            padding: 20px 0;
         }
+
         form {
             font-size: 14px;
-           
+
             label {
                 display: block;
                 font-weight: 300;
@@ -70,7 +73,7 @@
             }
 
             .input-field,
-             {
+                {
                 width: 100%;
                 padding: 10px 20px;
                 font-size: 14px;
@@ -86,9 +89,11 @@
                 box-shadow: none;
                 outline: 0px;
             }
+
             transition:all 0.5s ease;
-            &.hide{
-               display:none;
+
+            &.hide {
+                display: none;
             }
         }
 
@@ -117,8 +122,8 @@
                 }
 
                 &:hover {
-                    background-color: darken(#b18f4e,10%);
-                    border-color: darken(#b18f4e,10%);
+                    background-color: darken(#b18f4e, 10%);
+                    border-color: darken(#b18f4e, 10%);
                 }
 
                 &--wrapper {
@@ -133,38 +138,45 @@
 
                 }
             }
-        
+
         }
 
     }
-    &__thank{
-        @include desktop{
-            padding:20px 0;
+
+    &__thank {
+        @include desktop {
+            padding: 20px 0;
         }
-      position: absolute;
-      top:0;
-      visibility: hidden;
+
+        position: absolute;
+        top:0;
+        visibility: hidden;
         height:100%;
         transform: translateX(100vw);
-        
-      
-        &.show{
-            transition:all 0.5s ease;
+
+
+        &.show {
+            transition: all 0.5s ease;
             transform: translateX(0);
-            display:flex;
-            justify-content: center;
-            flex-direction:column;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             position: static;
             visibility: visible;
         }
-        h2{
-            margin-top:10px;
-            margin-bottom:10px;
+
+        img{
+            height:125px;
         }
-        h3{
-            margin:0;
-            font-weight:300;
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 0;
+            font-weight: 300;
         }
     }
 }
