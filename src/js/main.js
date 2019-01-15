@@ -252,17 +252,18 @@ $(function() {
 		{ value: 'ZM', label: 'Zambia' },
 		{ value: 'ZW', label: 'Zimbabwe' }
 	];
-	$('select#country').selectize({
-		valueField: 'value',
-		labelField: 'label',
-		options: countries
-	});
 
+	countries.forEach(function(item) {
+		// Create a new <option> element.
+		var option = document.createElement('option');
+		// Set the value using the item in the JSON array.
+		option.value = item.label;
+		// Add the <option> element to the <datalist>.
+		$('#countries select').append(option);
+	});
+	$('input[list]').datalist();
 	$('.content__form form').submit(function(e) {
 		e.preventDefault();
-		// let fname = $('#fname').length;
-		// console.log('d', fname);
-		console.log('hi');
 		$('.content__form form').addClass('hide');
 		$('.content__thank').addClass('show');
 	});

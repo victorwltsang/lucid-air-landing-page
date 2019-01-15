@@ -84,7 +84,7 @@ grunt.initConfig({
 	},
 	watch: {
 		scripts: {
-			files: ['src/js/*.js', 'src/*.html', 'src/scss/spec/*.scss'],
+			files: ['src/js/*.js', 'src/*.html', 'src/scss/**/*.scss'],
 			tasks: ['clean', 'uglify', 'htmlmin', 'sass', 'cssmin'],
 			options: {
 				spawn: false

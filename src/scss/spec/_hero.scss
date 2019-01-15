@@ -3,17 +3,27 @@
     position: relative;
     width: 100vw;
 
+    @include desktop {
+        width: $desktop-width;
+        margin: 0 auto;
+
+    }
+
     img {
         height: auto;
         width: 100vw;
 
+        @include desktop {
+            width: $desktop-width;
+            margin: 0 auto;
+
+        }
     }
 
     &__text {
         position: absolute;
         top: 10%;
         left: 20px;
-        line-height: 1.2;
         transform: translateY(10%);
         opacity: 0;
         transition: all 0.9s ease;
@@ -25,24 +35,26 @@
 
         h1 {
             font-size: 24px;
+            line-height: 30px;
             letter-spacing: 1px;
-            font-weight: 500;
-            margin:0;
+            font-weight: 400;
+            margin: 0;
         }
 
         @include max-tablet {
             h1 {
-                width:300px;
-               }
+                width: 300px;
+            }
         }
 
-      
+
         @include min-tablet {
             top: 60%;
-            left: 5%;
+            left: 40px;
 
             h1 {
                 font-size: 36px;
+                line-height: 42px;
                 color: white;
             }
 
@@ -54,18 +66,14 @@
 
         @include desktop {
             top: 50%;
+           
 
             h1 {
                 font-size: 48px;
-                // line-height: 60px;
+                line-height: 60px;
+            }
+        }
 
-            }
-        }
-        @media screen and (min-width:1680px){
-            h1{
-                font-size: 72px;
-            }
-        }
 
     }
 }

@@ -5,6 +5,9 @@
     @include min-tablet{
         font-size:14px;
     }
+    @include max-tablet{
+        padding-bottom:65px;
+    }
     .logo--svg{
         margin-left:-15px;
     }

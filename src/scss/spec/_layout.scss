@@ -55,7 +55,14 @@ p,li,a{
   padding:0 20px;
 
   @include min-tablet{
-    padding: 0 5%;
+    padding: 0 40px;
+  }
+
+  @include desktop{
+    width:1020px;
+    padding:0 40px;
+    margin:0 auto;
   }
 
 }
+

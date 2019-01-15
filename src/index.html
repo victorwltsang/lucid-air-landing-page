@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lucid Air</title>
-    <meta name="description" content=" The Future of Luxury Mobility"/>
+    <meta name="description" content=" The Future of Luxury Mobility" />
     <meta name="Keywords" content="Lucid Air, Electric Sedan, Car, Luxury">
     <link rel="stylesheet" href="css/min/main.min.css" />
 
@@ -69,10 +69,21 @@
                                 <input type="email" id="email" name="email" class="input-field" required>
                             </div>
                             <div class="form__grid--item">
-                                <label for="select-country">Country</label>
-                                <!--   <select id="heard" required="" class="form-control" > -->
-                                <select id="country" name="select-country" required>
-                                </select>
+                                <div class="input-field__datalist">
+                                    <label for="countries">Country</label>
+                                    <input type="search" list="countries" class="input-field" required>
+                                    <span class="arrow-down"></span>
+                                    <datalist id="countries">
+                                        <!--[if !IE]><!-->
+                                        <select>
+                                            <!--<![endif]-->
+
+                                            <!--[if !IE]><!-->
+                                        </select>
+                                        <!--<![endif]-->
+                                    </datalist>
+
+                                </div>
                             </div>
 
                         </div>
@@ -83,7 +94,7 @@
                     <div class="content__thank">
                         <img src="./image/thank-you.jpg" alt="Thank You" />
                         <h2>Thank You</h2>
-                        <h3>We will be in touch shortly.</h3> 
+                        <h3>We will be in touch shortly.</h3>
                     </div>
                 </div>
             </div>
@@ -121,7 +132,7 @@
     </footer>
 
     <script src="js/min.js/jquery.min.js"></script>
-    <script src="js/min.js/selectize.min.js"></script>
+    <script src="js/min.js/jquery.datalist.js"></script>
     <script src="js/min.js/main.js"></script>
 </body>
 
