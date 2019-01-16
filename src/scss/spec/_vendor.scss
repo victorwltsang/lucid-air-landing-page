@@ -1,0 +1,21 @@
+.easy-autocomplete{
+  width:100% !important
+}
+
+.easy-autocomplete input{
+  width: 100%;
+}
+
+.easy-autocomplete-container ul li{
+  font-size:12px;
+  padding:8.5px 20px;
+}
+.easy-autocomplete-container ul {
+  background: none repeat scroll 0 0 #ffffff;
+  display: none;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  position: relative;
+  top: -20px
+}

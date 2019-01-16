@@ -7,7 +7,9 @@
     <title>Lucid Air</title>
     <meta name="description" content=" The Future of Luxury Mobility" />
     <meta name="Keywords" content="Lucid Air, Electric Sedan, Car, Luxury">
+    <link rel="stylesheet" href="css/min/easy-autocomplete.min.css" />
     <link rel="stylesheet" href="css/min/main.min.css" />
+
 
 </head>
 
@@ -69,21 +71,12 @@
                                 <input type="email" id="email" name="email" class="input-field" required>
                             </div>
                             <div class="form__grid--item">
-                                <div class="input-field__datalist">
-                                    <label for="countries">Country</label>
-                                    <input type="search" list="countries" class="input-field" required>
+                                <label for="countries">Country</label>
+                                <div style="position:relative">
+                                    <input id="countries" class="input-field" required/>
                                     <span class="arrow-down"></span>
-                                    <datalist id="countries">
-                                        <!--[if !IE]><!-->
-                                        <select>
-                                            <!--<![endif]-->
-
-                                            <!--[if !IE]><!-->
-                                        </select>
-                                        <!--<![endif]-->
-                                    </datalist>
-
                                 </div>
+                                
                             </div>
 
                         </div>
@@ -117,7 +110,7 @@
 
             </div>
             <div class="footer__site_info">
-                <p>Copyright ©2018 Lucid Motors, Inc. </p>
+                <p>Copyright ©<span class="year"></span> Lucid Motors, Inc. </p>
                 <ul>
                     <li><a href="#">Privacy</a></li>
                     <li>|</li>
@@ -132,7 +125,7 @@
     </footer>
 
     <script src="js/min.js/jquery.min.js"></script>
-    <script src="js/min.js/jquery.datalist.js"></script>
+    <script src="js/min.js/jquery.easy-autocomplete.js"></script>
     <script src="js/min.js/main.js"></script>
 </body>
 

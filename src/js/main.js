@@ -252,19 +252,37 @@ $(function() {
 		{ value: 'ZM', label: 'Zambia' },
 		{ value: 'ZW', label: 'Zimbabwe' }
 	];
+	var options = {
+		data: countries,
 
-	countries.forEach(function(item) {
-		// Create a new <option> element.
-		var option = document.createElement('option');
-		// Set the value using the item in the JSON array.
-		option.value = item.label;
-		// Add the <option> element to the <datalist>.
-		$('#countries select').append(option);
-	});
-	$('input[list]').datalist();
+		getValue: 'label',
+
+		list: {
+			match: {
+				enabled: true
+			},
+			showAnimation: {
+				type: 'fade', //normal|slide|fade
+				time: 300,
+				callback: function() {}
+			},
+
+			hideAnimation: {
+				type: 'slide', //normal|slide|fade
+				time: 300,
+				callback: function() {}
+			}
+		},
+
+		theme: 'square'
+	};
+
+	$('#countries').easyAutocomplete(options);
+
 	$('.content__form form').submit(function(e) {
 		e.preventDefault();
-		$('.content__form form').addClass('hide');
+		$('.content__form form').css('display', 'none');
 		$('.content__thank').addClass('show');
 	});
+	document.querySelector('.year').appendChild(document.createTextNode(new Date().getFullYear()));
 });
